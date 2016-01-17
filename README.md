@@ -27,7 +27,7 @@ You can see the theme in action at https://parbhatpuri.com
 
 ## Installation
 
-You can install Pelican-Blue theme to your earlier Pelican project or create a new project from Pelican [Quickstart](http://docs.getpelican.com/en/3.6.3/quickstart.html) guide.
+You can install Pelican-Blue theme to your earlier Pelican project or create a new project from the Pelican [Quickstart](http://docs.getpelican.com/en/3.6.3/quickstart.html) guide.
 
 * Clone the repository
 
@@ -35,7 +35,7 @@ You can install Pelican-Blue theme to your earlier Pelican project or create a n
 $ git clone https://github.com/Parbhat/pelican-blue.git
 ```
 
-* Create a `THEME` variable in your `pelicanconf.py` file and set its value to location of pelican-blue theme.
+* Create a `THEME` variable in your `pelicanconf.py` file and set its value to the location of pelican-blue theme.
 
 ```python
 THEME = 'path-to-pelican-blue-theme'
@@ -62,7 +62,7 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/username'),
 make devserver
 ```
 
-**Note:** If you are new to Pelican Static Site Generator, you can read the Pelican [Docs](http://docs.getpelican.com/en/3.6.3/) to start writing articles. You can also customize the theme after understanding the working of Pelican.
+**Note:** If you are new to Pelican Static Site Generator, you can read the Pelican [Docs](http://docs.getpelican.com/en/3.6.3/) to learn the working of Pelican. You can also customize the theme after reading the documentation.
 
 ## Settings
 
