@@ -67,7 +67,7 @@
 
     <nav class="nav">
       <ul class="list-bare">
-        <li>
+      
         {% for title, link in MENUITEMS %}
           <li><a class="nav__link" href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
@@ -76,7 +76,6 @@
           <li><a class="nav__link" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}{% endif %}
          
-        </li>
       </ul>
     </nav>
 

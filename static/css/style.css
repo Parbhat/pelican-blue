@@ -21,6 +21,7 @@ h1, h2 {
   text-transform: none;
   color: #1DAEDF;
   line-height: 1;
+  font-weight: 600;
 }
 
 .latest
