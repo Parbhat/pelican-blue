@@ -18,7 +18,7 @@ You can see the theme in action at https://parbhatpuri.com
 ## Features
 
 * Responsive (Mobile Friendly Test on [Google](https://www.google.com/webmasters/tools/mobile-friendly/?url=https%3A%2F%2Fparbhatpuri.com%2F))
-* Fast ( Load time tested on [Pingdom](http://tools.pingdom.com/fpt/#!/bT0Pry/https://parbhatpuri.com/): 540ms)
+* Fast (Load time tested on [Pingdom](http://tools.pingdom.com/fpt/#!/bT0Pry/https://parbhatpuri.com/): 540ms)
 * Syntax highlighting for code blocks
 * [Disqus](https://disqus.com/) for Comments
 * Google Analytics
