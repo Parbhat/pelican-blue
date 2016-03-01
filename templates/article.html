@@ -4,11 +4,11 @@
 <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
 <meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
 <meta name="twitter:title" content="{{ SITENAME }} ~ {{ article.title }}">
-<meta name="twitter:description" content="{{ article.summary }}">
+<meta name="twitter:description" content="{{ article.summary|striptags|escape }}">
 
 <!-- Facebook Meta Data -->
 <meta property="og:title" content="{{ SITENAME }} ~ {{ article.title }}" />
-<meta property="og:description" content="{{ article.summary }}" />
+<meta property="og:description" content="{{ article.summary|striptags|escape  }}" />
 <meta property="og:image" content="" />
 {% endblock head %}
 {% block title %}{{ article.title }}{% endblock %}
