@@ -114,6 +114,7 @@
   </article>
 
   <!-- Footer -->
+  {% if DISPLAY_FOOTER or DISPLAY_FOOTER is not defined %}
   <footer>
     <p>
       Blog powered by <a href="http://getpelican.com/">Pelican</a>, 
@@ -121,6 +122,7 @@
       Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
     </p>
   </footer>
+  {% endif %}
 
   {% if GOOGLE_ANALYTICS %}
   <!-- Analytics -->
