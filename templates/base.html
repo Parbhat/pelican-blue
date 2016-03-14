@@ -75,7 +75,7 @@
         {% if DISPLAY_PAGES_ON_MENU and PAGES %}{% for p in pages %}
           <li><a class="nav__link" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}{% endif %}
-         
+        
       </ul>
     </nav>
 
@@ -95,8 +95,7 @@
       {% endif %}
     </p>
 
-    <!--
-    {% if categories %}
+    {% if DISPLAY_CATEGORIES_ON_MENU and categories %}
     <h2>Categories</h2>
     <ul class="navbar">
       {% for cat, null in categories %}
@@ -104,7 +103,6 @@
       {% endfor %}
     </ul> 
     {% endif %}
-    -->
   </aside>
 
   <!-- Content -->
