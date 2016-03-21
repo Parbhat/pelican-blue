@@ -21,7 +21,6 @@
 	{% for article in (articles_page.object_list if articles_page else articles) %}
 	<li class="post_list"><p class="post_entry">
 		<h2 class="post_title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
-        <p>{{ article.summary }}</p>
 		<a href="{{ SITEURL }}/{{ article.author.url }}">@{{ article.author }}</a>
 		<span> in </span>
 		<span class="post_category"><a href="{{ SITEURL }}/{{ article.category.url }}" rel="bookmark" title="Permalink to {{ article.category|striptags }}">[ {{ article.category }} ]</a></span>
