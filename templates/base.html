@@ -75,6 +75,13 @@
         {% if DISPLAY_PAGES_ON_MENU and PAGES %}{% for p in pages %}
           <li><a class="nav__link" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
         {% endfor %}{% endif %}
+
+        {% if LINKS %}
+          <li><h1 class="blog_roll_link"><br/><br/><br/>BLOGROLLS</h1></li>
+          {% for name, link in LINKS %}
+            <li><a class="blog_roll_link" href="{{ link }}">{{ name }}</a></li>
+          {% endfor %}
+        {% endif %}
         
       </ul>
     </nav>
