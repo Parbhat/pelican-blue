@@ -103,6 +103,16 @@
       {% endfor %}
     </ul> 
     {% endif %}
+
+    {% if LINKS %}
+      <h2 class="blog_roll_link"><br/>BLOGROLLS</h2>
+      <ul class="navbar">
+      {% for name, link in LINKS %}
+        <li><a href="{{ link }}">{{ name }}</a></li>
+      {% endfor %}
+      </ul> 
+    {% endif %}
+
   </aside>
 
   <!-- Content -->

@@ -201,6 +201,14 @@ aside > h2 {
 }
 
 
+.blog_roll_link 
+{
+  display: block;
+  padding: 0.33147rem 0;
+  border-bottom: 3px solid #328cc7;
+} 
+
+
 /*--------Responsive------------*/
 
 @media (max-width: 800px) {
