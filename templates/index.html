@@ -14,10 +14,9 @@
 {% block content_title %}{% endblock %}
 {% block content %}
     <h1 class="title">Hi, I'm {{ AUTHOR }}</h1>
-
     {% if articles %}
         <ol>
-            <h2 class="latest">Latest Posts</h2>
+            {% block heading %}<h2 class="latest">Latest Posts</h2>{% endblock %}
             {% for article in (articles_page.object_list if articles_page else articles) %}
                 <li class="post_list"><p class="post_entry">
                     <h2 class="post_title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
