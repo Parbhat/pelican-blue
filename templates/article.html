@@ -3,20 +3,20 @@
     {{ super() }}
     <meta name="twitter:creator" content="{{ TWITTER_USERNAME }}">
     <meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
-    <meta name="twitter:title" content="{{ SITENAME }} ~ {{ article.title }}">
+    <meta name="twitter:title" content="{{ SITENAME }} ~ {{ article.title|striptags }}">
     <meta name="twitter:description" content="{{ article.summary|striptags|escape }}">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="{{ SITENAME }} ~ {{ article.title }}"/>
+    <meta property="og:title" content="{{ SITENAME }} ~ {{ article.title|striptags }}"/>
     <meta property="og:description" content="{{ article.summary|striptags|escape }}"/>
     <meta property="og:image" content=""/>
 {% endblock head %}
-{% block title %}{{ article.title }}{% endblock %}
+{% block title %}{{ article.title|striptags }}{% endblock %}
 {% block content %}
     <section id="content">
         <article>
             <h2 class="post_title post_detail"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-                                                  title="Permalink to {{ article.title }}">{{ article.title }}</a></h2>
+                                                  title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
             <div class="entry-content blog-post">
                 {{ article.content }}
             </div>
@@ -39,7 +39,7 @@
                     <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url={{ SITEURL }}/{{ article.url }}&text={{ article.title }}&via={{ TWITTER_USERNAME }}"><img
+                                             href="https://twitter.com/share?url={{ SITEURL }}/{{ article.url }}&text={{ article.title|striptags }}&via={{ TWITTER_USERNAME }}"><img
                             src="{{ SITEURL }}/theme/images/icons/twitter-s.png"></a></span>
 
                     <span class="gplus"><a target="_blank" title="Google +"
@@ -50,17 +50,17 @@
 
                     <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u={{ SITEURL }}/{{ article.url }}&t={{ article.title }}"><img
+                                              href="https://www.facebook.com/sharer.php?u={{ SITEURL }}/{{ article.url }}&t={{ article.title|striptags }}"><img
                             src="{{ SITEURL }}/theme/images/icons/facebook-s.png"></a></span>
 
                     <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url={{ SITEURL }}/{{ article.url }}&title={{ article.title }}"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url={{ SITEURL }}/{{ article.url }}&title={{ article.title|striptags }}"
                        rel="nofollow"
                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="{{ SITEURL }}/theme/images/icons/linkedin-s.png"></a>
 
                     <span class="mail"><a
-                            href="mailto:?subject={{ article.title }}&amp;body=Viens découvrir un article à propos de [{{ article.title }}] sur le site de {{ AUTHOR }}. {{ SITEURL }}/{{ article.url }}"
+                            href="mailto:?subject={{ article.title|striptags }}&amp;body=Viens découvrir un article à propos de [{{ article.title|striptags }}] sur le site de {{ AUTHOR }}. {{ SITEURL }}/{{ article.url }}"
                             title="Share by Email" target="_blank"><img
                             src="{{ SITEURL }}/theme/images/icons/mail-s.png"></a></span>
                 </div>
