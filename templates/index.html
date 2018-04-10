@@ -15,7 +15,7 @@
 {% block content %}
     <h1 class="title">Hi, I'm {{ AUTHOR }}</h1>
     {% if articles %}
-        <ol>
+        <ol class="posts">
             {% block heading %}<h2 class="latest">Latest Posts</h2>{% endblock %}
             {% for article in (articles_page.object_list if articles_page else articles) %}
                 <li class="post_list"><p class="post_entry">
