@@ -89,8 +89,7 @@
     <p class="social">
         {% if SOCIAL %}
             {% for name, link in SOCIAL %}
-                <a href="{{ link }}" target="_blank"><img
-                        src="{{ SITEURL }}/theme/images/icons/{{ name|lower }}.png"></a>
+                <a href="{{ link }}" target="_blank"><img src="{{ SITEURL }}/theme/images/icons/{{ name|lower }}.png"></a>
             {% endfor %}
         {% endif %}
         {% if FEED_ALL_ATOM %}
@@ -134,10 +133,10 @@
 {% if DISPLAY_FOOTER or DISPLAY_FOOTER is not defined %}
     <footer>
         <p>
-            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
-            which takes great advantage of <a href="http://python.org">Python</a>.
-            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
-                href="https://parbhatpuri.com/">@parbhat</a>.
+            © 2020 - {{ CURRENT_YEAR }} {{ AUTHOR }}. Proudly powered by
+            <a href="http://getpelican.com/">Pelican</a>,
+            which takes advantages of <a href="http://python.org">Python</a>.
+            Self-customized theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a>.
         </p>
     </footer>
 {% endif %}
