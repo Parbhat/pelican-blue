@@ -2,6 +2,7 @@
 <html lang="{{ DEFAULT_LANG }}" itemscope itemtype="http://schema.org/Person">
 <head>
     {% block head %}
+	{% include 'google_analytics.html' %}
         <meta charset="utf-8">
         <!-- Site Meta Data -->
         <title>{% block title %} {{ SITENAME }} | {{ SIDEBAR_DIGEST }} {% endblock %}</title>
