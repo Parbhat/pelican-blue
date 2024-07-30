@@ -31,8 +31,8 @@ You can install Pelican-Blue theme to your earlier Pelican project or create a n
 
 * Clone the repository
 
-```
-$ git clone https://github.com/Parbhat/pelican-blue.git
+```shell
+git clone https://github.com/Parbhat/pelican-blue.git
 ```
 
 * Create a `THEME` variable in your `pelicanconf.py` file and set its value to the location of pelican-blue theme.
